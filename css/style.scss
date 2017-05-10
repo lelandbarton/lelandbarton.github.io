@@ -675,3 +675,31 @@ pre {
     .vi    { color: #008080 } // Name.Variable.Instance
     .il    { color: #099 } // Literal.Number.Integer.Long
 }
+
+
+.sum {
+	
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+  font-weight: 300;
+  padding-top: 0;
+}
+
+.sumTitle {
+
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-indent: 3px;
+}
+
+.sumExt {
+
+}
+
+.sumContent {
+
+  padding-top: 3.5em;
+  text-align: left;
+}

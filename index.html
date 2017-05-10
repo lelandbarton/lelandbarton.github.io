@@ -4,36 +4,52 @@ layout: default
 
 <div class="home">
 
-
-  {% for post in site.posts%}
-  <div class="post postContent">
-    <div  class="postDate"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
-    </div>
-    <div class="postDay">
-      {{post.tag}}
-    </div>
-    <br>
-    <div class="postTitle">
-    <a class='postLink' href="{{site.url}}{{site.baseurl}}{{post.url}}">{{post.title}}</a>
-    </div>
-    <div class="postExt">
-   {{ post.content | strip_html | truncatewords:20}}
+  <div class="sum sumContent">
+    <div class="sumTitle">About</div>
+    <div class="sumExt">
+	I have a passion for understanding the universe through the math, science, and technology that explores it. I spent years learning to become a capable software engineer that can leverage a broad suite of tools and technologies to create solutions to the world's problems.
     </div>
   </div>
 
+  <div class="sum sumContent">
+    <div class="sumTitle">Background</div>
+    <div class="sumExt">
+	Born in Australia and raised in Houston, Texas. I grew up close to NASA's Johnson Space Center in a community that used science and technology as a way to reach for the stars. Both my parents have an intellectual lean, my father working for various NASA contractors, and my mother a nurse.
 
-  {% endfor %}
-  <!--<ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta-main">{{ post.date | date: "%b %-d, %Y" }}</span>
+    </div>
+    <div class="sumExt">
+	I started studying Math in college with the plan to choose a career in a STEM field after I had some more time. I fell in love with Math and studied it all through college and filling up my electives with computer science courses.
+    </div>
+  </div>
+<!--
 
-        <h2>
-          <a class="post-link-main" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>-->
+	This page needs to give people 
+		techy
+		jobbers
+		consultants
+		possible personal connections
+		background checkers?
+
+	keep it professional
+
+	about
+
+
+	Background
+
+
+My strengths focus on data management and security. 
+	
+	express vector and velocity on big goals
+		techy - broad knowledge of technology
+		jobbers - broad knowledge of tech with ability to bring it to people
+		consultant gig - come off as smart and knowledgable with ability
+		possible personal connections - asdfasdfasdf
+
+
+-->
+
+
 
 
 
