@@ -764,6 +764,10 @@
 
 		}
 
+		.tagline {
+			max-width:300px;
+		}
+
 		body.is-loading #main {
 			opacity: 0;
 			-moz-transform: rotateX(15deg);
