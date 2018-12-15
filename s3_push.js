@@ -65,6 +65,7 @@ const pushFileToS3 = (currentPath) => {
 		        Body: fileContent,
 		        ContentType: contentType
 		      }, (res) => {
+			console.log(res)
 		        console.log(`Successfully uploaded '${fileName} to ${key}!`);
 		      });
 		      
