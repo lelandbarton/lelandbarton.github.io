@@ -45,7 +45,7 @@ const pushFileToS3 = (currentPath) => {
 		      if (error) { throw error; }
 
 
-		      let contentType = 'text/html'
+		      var contentType = 'text/html'
 
 		      if (filePath.endsWith('css')) {
 		      	contentType = 'text/css'
