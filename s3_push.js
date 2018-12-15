@@ -42,7 +42,11 @@ const pushFileToS3 = (currentPath) => {
 		    // read file contents
 		    fs.readFile(filePath, (error, fileContent) => {
 		      // if unable to read file contents, throw exception
-		      if (error) { throw error; }
+		      if (error) { 
+			console.log("Unable to read contents", error);
+			process.exit(1);
+			throw error; 
+		      }
 
 
 		      var contentType = 'text/html'
@@ -64,8 +68,11 @@ const pushFileToS3 = (currentPath) => {
 		        Key: key,
 		        Body: fileContent,
 		        ContentType: contentType
-		      }, (res) => {
-			console.log(res)
+		      }, (err) => {
+			if (err) {
+			  console.log("ERROR", err);
+			  process.exit(1);
+			}
 		        console.log(`Successfully uploaded '${fileName} to ${key}!`);
 		      });
 		      
