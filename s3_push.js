@@ -6,7 +6,7 @@ const path = require("path"); // from node.js
 
 // configuration
 const config = {
-  s3BucketName: 'le.land',
+  s3BucketName: 'lelandbarton.com',
   folderPath: './src' // path relative script's location
 };
 
